@@ -1,0 +1,122 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta  charset="utf-8"/>
+    <title>登录</title>
+
+      <style type="text/css">
+        body {
+            margin: 0;
+            text-align:center
+        }
+
+        video {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-height: 100%;
+            min-width: 100%;
+            width: auto;
+            height: auto;
+            z-index: -9999;
+        }
+        .button1 
+        {
+background:transparent;
+color: black;
+    border: 1px solid #555555;
+}
+.button1:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 90px 0 rgba(0,0,0,0.19);
+
+}
+  #login {
+     
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 70%;
+       }
+#TextBox2
+{
+    
+border-top-width :0px;
+border-left-width :0px;
+border-right-width :0px;
+border-bottom-width:1px;
+font-size: 16px;
+color: black;
+
+border-bottom: mediumpurple thin solid;
+font-style:normal;
+line-height:normal;
+height:18px;
+font-variant:normal;
+font-weight :normal;
+}
+#TextBox1
+{
+    
+border-top-width :0px;
+border-left-width :0px;
+border-right-width :0px;
+border-bottom-width:1px;
+font-size: 16px;
+color: black;
+
+border-bottom: mediumpurple thin solid;
+font-style:normal;
+line-height:normal;
+height:18px;
+font-variant:normal;
+font-weight :normal;
+}
+
+ 
+ 
+       
+    </style>
+    
+    <script type="text/javascript">
+  function bottomForm(){
+  //这个a的值就是我们在输入框里面的值
+  var a=document.bf.key.value;
+  window.open("http://www.baidu.com/s?wd=" + a);
+   return false;  
+  }  
+  </script>
+</head>
+<body>
+
+<form name=bf onsubmit="bottomForm()">  
+    <div  id="main">
+    
+    <div style="width:400px;height:300px;opacity:1 ;font-family:YouYuan;font-size:x-large;   "  id="login" >
+    <h1>Welcome</h1>
+<!-- <h3>欢迎走进我的世界</h3> -->
+
+
+  <table border="0" cellspacing="1"  >
+  <tr>
+  <td><input  style="width:320px; height:30px"  name="key" value=""></td>
+  <td><button type="submit "  style="  width:80px;height:36px">go</button></td>  
+  </tr>
+  </table>
+
+
+    </div>
+</div>
+    <div>
+ <video id="v1" autoplay loop muted>
+        <source src="q.mp4" />
+    </video>
+    </div>
+  </form>
+</body>
+</html>
