@@ -1,0 +1,147 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="WebApplication1.Site1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <style type="text/css">
+#aa
+  {
+     width:1000px;
+     height:1000px;
+     margin:0 auto;
+     }
+
+ #bb
+    {
+     width :1000px;
+     height:126px;
+     
+     text-align:center;
+     line-height:126px;
+     font-size:25px;
+     font-family:STFangsong;
+      }
+ .cc{
+     width:1000px;
+     height:550px;
+
+ }
+ #dd{
+     width :240px;
+     height:550px;
+     
+     margin-right: 0px;
+        }
+ #ee{
+     width:1000px;
+     height:74px;
+   
+     text-align:center;
+     line-height:40px;
+     font-size:20px;
+     font-family:STFangsong;
+ }
+ #ff{
+     width:755px;
+     height:550px;
+     margin-left:242px;
+     margin-top: -550px;
+        }
+ .auto-style1 
+ {
+            width: 99%;
+            height: 90px;
+        }
+  
+        .auto-style2 {
+            width: 99%;
+            height: 84px;
+        }
+        .auto-style3 {
+            width: 99%;
+            height: 87px;
+        }
+
+        
+
+
+    </style>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body >
+    <form id="form1" runat="server">
+ <div id="aa">
+    <div id="bb" style="border-bottom-style: solid; border-bottom-width: thin; border-top-style: solid; border-top-width: thin;">
+
+        <strong>学生信息管理系统</strong>
+ 
+                              
+					
+    </div>
+       <div style="z-index: 999; width: 240px; border-right-style: solid; border-right-width: thin;" >  当前用户： <asp:Label ID="lblCurrentUser" runat="server" Text="Label"></asp:Label></div>
+
+    <div class="cc">
+    <div id="dd" style="padding-right: inherit; border-right-style: solid; border-right-width: thin">
+    <table style="text-align:center;width:99%">
+    <tr style="text-align:center;width:99%;">
+    <td style="text-align:center;" class="auto-style2">
+
+        <asp:LinkButton ID="LinkButton2" runat="server" ForeColor="Black" Font-Size="Larger" Font-Overline="False" OnClick="LinkButton2_Click">查询学生成绩</asp:LinkButton>
+    
+    </td>
+    </tr>
+    <tr style="text-align:center;width:99%;">
+    <td style="text-align:center;" class="auto-style1">
+    
+        <asp:LinkButton ID="LinkButton4" runat="server" ForeColor="Black" Font-Overline="False" Font-Size="Larger" OnClick="LinkButton4_Click">查看学生信息</asp:LinkButton>
+    
+    </td>
+    </tr>
+    <tr style="text-align:center;width:99%;">
+    <td style="text-align:center;" class="auto-style3">
+    
+        <asp:LinkButton ID="LinkButton3" runat="server" ForeColor="Black" Font-Overline="False" Font-Size="Larger" OnClick="LinkButton3_Click">开始选课</asp:LinkButton>
+    
+    </td>
+    </tr>
+         
+           <tr style="text-align:center;width:99%;">
+    <td style="text-align:center;" class="auto-style3">
+    
+        <asp:LinkButton ID="LinkButton5" runat="server" ForeColor="Black" Font-Overline="False" Font-Size="Larger" OnClick="LinkButton5_Click">修改密码</asp:LinkButton>
+    
+    </td>
+    </tr>
+        <tr style="text-align:center;width:99%;">
+    <td style="text-align:center;" class="auto-style3">
+    
+        <asp:LinkButton ID="LinkButton7" runat="server" ForeColor="Black" Font-Overline="False" Font-Size="Larger" OnClick="LinkButton7_Click">注销</asp:LinkButton>
+    
+    </td>
+    </tr>
+       
+       </table>
+  
+  
+    
+       
+    </div>
+    <div id="ff">
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+        
+        </div>
+    <div id="ee" style="border-top-style: solid; border-top-width: thin">
+        <br />
+      
+    </div>
+       
+    </form>
+</body>
+</html>   
